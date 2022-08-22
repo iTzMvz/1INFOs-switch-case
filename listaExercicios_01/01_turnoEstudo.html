@@ -11,11 +11,26 @@
     */
 
     //ENTRADA
-
-    
+    const turno = prompt("Informe um turno m|v|n").toUpperCase()
+    let estudo;
     //PROCESSAMENTO
 
-    
+    switch (turno) {
+        case "M":
+            estudo = "Bom dia"
+            break;
+        case "V":
+            estudo = "Boa tarde"
+            break;
+        case "N":
+            estudo = "Boa noite"
+            break;
+        default:
+            estudo = "Letra invalida"
+            break;
+    }
+
     //SAÍDA
+    document.write(estudo)
 
 </script>

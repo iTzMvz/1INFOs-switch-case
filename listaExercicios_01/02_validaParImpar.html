@@ -4,11 +4,18 @@
     */
 
     //ENTRADA
-
-    
+    const numero = Number(prompt("Informe um número"))
+    let mensagem
     //PROCESSAMENTO
-
+    switch (numero % 2) {
+        case 0:
+            mensagem = "Numero é par"
+            break;
+        default:
+            mensagem = "Numero é impar"
+            break;
+    }
     
     //SAÍDA
-
+    document.write(mensagem)
 </script>

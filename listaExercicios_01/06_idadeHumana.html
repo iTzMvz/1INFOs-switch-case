@@ -8,11 +8,24 @@
     // - cães grandes: fator 7.
 
     // ENTRADA
-
-    
+    const idadeCao = parseInt("Informe uma idade")
+    const porte = prompt("Informe um porte P|M|G").toLowerCase()
+    let fatores
     // PROCESSAMENTO
-
-    
+    switch (porte) {
+        case "P":
+            fatores = 5
+            break;
+        case "M":
+        fatores = 6;
+        break;
+        case "G":
+        fatores = 7
+        break;
+        default:
+            break;
+    }
+const idadefinal = idadeCao * fatores
     // SAÍDA
 
-    </script>
+</script>
