@@ -10,12 +10,31 @@
     */
 
     //ENTRADA
-const pergunta1 = prompt("Telefonou para a vitima?")
-    const pergunta2 = prompt("Esteve no local do crime?")
-    const pergunta3 = prompt("Mora perto da ")
+const perg1 = parseInt(prompt("Telefonou para a vitima? (1-Sim|0-Não)"))
+    const perg2 = parseInt(prompt("Esteve no local do crime? (1-Sim|0-Não)"))
+    const perg3 = parseInt(prompt("Mora perto da Vitima? (1-Sim|0-Não)"))
+    const perg4 = parseInt(prompt("Devia para a vitima (1-Sim|0-Não)"))
+    const perg5 = parseInt(prompt("Ja trabalhou com a vitima? (1-Sim|0-Não)"))
+    const soma = perg1 + perg2 + perg3 + perg4 + perg5
+    let mensagem
     //PROCESSAMENTO
-
+switch (soma) {
+    case 0:
+        mensagem = "Inocente"
+        break;
+    case 1:
+    case 2:
+        mensagem = "Suspeita"
+        break;
+    case 3:
+    case 4:
+        mensagem = "Cúmpluice"
+        break;
+    default:
+        mensagem = "Assassino"
+        break;
+}
     
     //SAÍDA
-
+document.write(mensagem)
 </script>

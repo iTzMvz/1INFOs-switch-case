@@ -5,11 +5,79 @@
     */
 
     //ENTRADA
-
+    const mesDoAno = parseInt(prompt("Informe um mês"));
+    const hemisferio = prompt("Informe um hesmifério").toUpperCase()
+    let mensagem
 
     //PROCESSAMENTO
-
-    
+   
+    switch (mesDoAno) {
+        case 1:
+        case 2:
+        case 12:
+            mensagem = "Verão!";
+            break;
+        case 3:
+        case 4:
+        case 5:
+            mensagem = "Outono";
+            break;
+        case 6:
+        case 7:
+        case 8:
+            mensagem = "Inverno!";
+            break;
+        case 9:
+        case 10:
+        case 11:
+            mensagem = "Primavera!"
+            break
+        default:
+    } 
+    switch (hemisferio) {
+        case "S":
+        case 1:
+        case 2:
+        case 12:
+            mensagem = "Verão!";
+            break;
+        case 3:
+        case 4:
+        case 5:
+            mensagem = "Outono";
+            break;
+        case 6:
+        case 7:
+        case 8:
+            mensagem = "Inverno!";
+            break;
+        case 9:
+        case 10:
+        case 11:
+            mensagem = "Primavera!"
+            break;
+        case "N":
+        case 1:
+        case 2:
+        case 12:
+            mensagem = "Inverno!";
+            break;
+        case 3:
+        case 4:
+        case 5:
+            mensagem = "Primavera";
+            break;
+        case 6:
+        case 7:
+        case 8:
+            mensagem = "Verão!";
+            break;
+        case 9:
+        case 10:
+        case 11:
+            mensagem = "Outono!"
+            break;
+    }
     //SAÍDA
-
+    document.write(mensagem)
 </script>
